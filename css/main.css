@@ -90,9 +90,7 @@ textarea {
    /* General Styles */
 
    html {
-       background: ;
        font-size: 16px;
-
    }
 
    body {
@@ -105,22 +103,23 @@ textarea {
 
    ul,
    ol {
-       text-transform: uppercase;
        list-style-type: none;
+       margin: 0;
+       padding: 0;
 
    }
 
    a {
        color: #e2e3ed;
        text-decoration: none;
-
    }
 
    h2 {
-       color: #e2
+       color: #e2e3ed;
        font-family: 'Poppins', sans-serif;
        font-size: 1.875em;
-       font-weight: normal;
+       font-weight: 500;
+       margin: 0;
 
    }
 
@@ -130,7 +129,7 @@ textarea {
        font-family: 'Poppins', sans-serif;
        margin: 20px 0;
        font-size: 1.125em;
-       font-weight: normal;
+       font-weight: 500;
 
    }
 
@@ -173,6 +172,7 @@ header, footer {
     background-color: #202322;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -211,6 +211,7 @@ header nav {
     width: 60%;
     text-transform: uppercase;
     font-size: 1.125em;
+    font-weight: 700;
 
 }
 
@@ -220,7 +221,13 @@ header nav ul {
     justify-content: space-around;
 
 }
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer {
+    text-align: center;
     flex-direction: column;
 }
 
@@ -244,9 +251,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer .social-icons p i {
+    font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -343,6 +358,7 @@ input[type=button] {
 .features i {
     font-size: 3.75em;
     margin-bottom: 40px;
+}
 
 /* Reviews */
 
@@ -403,21 +419,7 @@ input[type=button] {
     left: 0;
 }
 
-.map {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%; }
 
-    .map iframe,
-    .map object,
-    .map embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%; }
 
 /* ==========================================================================
   FAQ Page
@@ -589,6 +591,10 @@ input[type=button] {
     }
 /* Hero Area */
 
+hero-area {
+    min-height: 600px;
+}
+
 .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -639,8 +645,14 @@ input[type=button] {
         width: 85%;
     }
 
+    .reviews article figure,
     .reviews article div {
         width: 49%;
+    }
+
+    .reviews h3 {
+        width: 75%;
+        margin: 0;
     }
 
     /* Footer */
@@ -650,7 +662,7 @@ input[type=button] {
         margin: 100px 0;
     }
 
-    .footer-content {
+    footer .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -662,13 +674,24 @@ input[type=button] {
         margin-bottom: 0;
     }
 
+    footer h4 {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+
     footer p {
         line-height: 1.285;
     }
 
-    footer .copyright {
-        width: 100%;
+    footer .social-icons {
+        width: 12.5em;
+        justify-content: space-between;
     }
+
+    footer .copyright {
+        margin: 100%;
+    }
+
 
     /* ==========================================================================
      About Page
@@ -793,6 +816,9 @@ input[type=button] {
     /* ==========================================================================
    About Page
    ========================================================================== */
+    .map figure {
+        padding-bottom: 37.5%;
+    }
 
    .mission h2,
    .contact-section .content-wrapper h2 {
